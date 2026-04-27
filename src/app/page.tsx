@@ -21,7 +21,7 @@ function Hero() {
   return (
     <section
       id="hero"
-      className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-6"
+      className="relative flex min-h-[85vh] flex-col items-center justify-center overflow-hidden px-6 pt-20 pb-12 sm:pt-24"
     >
       <Particles
         className="absolute inset-0"
@@ -36,7 +36,7 @@ function Hero() {
         className="pointer-events-none absolute left-1/2 top-1/2 -z-0 h-[80vmin] w-[80vmin] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgba(168,85,247,0.18),rgba(59,130,246,0.08)_45%,transparent_70%)] blur-3xl"
       />
       <div className="relative z-10 flex flex-col items-center text-center">
-        <p className="mb-5 text-xs uppercase tracking-[0.3em] text-zinc-500">
+        <p className="mb-4 text-xs uppercase tracking-[0.3em] text-zinc-500">
           Finance · GSU · 2028
         </p>
         <h1 className="text-5xl font-semibold leading-[1.05] tracking-tight sm:text-7xl md:text-8xl">
@@ -48,10 +48,10 @@ function Hero() {
             Diana Zhang
           </AnimatedGradientText>
         </h1>
-        <p className="mt-6 max-w-xl text-base text-zinc-400 sm:text-lg">
+        <p className="mt-5 max-w-xl text-base text-zinc-400 sm:text-lg">
           Trading the markets, building the tools.
         </p>
-        <div className="mt-10 flex items-center gap-4 text-sm">
+        <div className="mt-8 flex items-center gap-4 text-sm">
           <a
             href="#building"
             className="rounded-full border border-white/10 bg-white/5 px-5 py-2 text-zinc-200 transition hover:border-purple-400/40 hover:bg-purple-500/10"
@@ -74,17 +74,12 @@ function Building() {
   return (
     <section
       id="building"
-      className="relative mx-auto max-w-5xl px-6 py-32 sm:py-40"
+      className="relative mx-auto max-w-5xl px-6 py-16 sm:py-20"
     >
-      <header className="mb-12 flex items-end justify-between gap-6">
-        <div>
-          <p className="mb-2 text-xs uppercase tracking-[0.3em] text-purple-400">
-            Currently building
-          </p>
-          <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
-            One project, all the focus.
-          </h2>
-        </div>
+      <header className="mb-8">
+        <p className="text-xs uppercase tracking-[0.3em] text-purple-400">
+          Currently building
+        </p>
       </header>
 
       <article className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.02] p-8 transition hover:border-white/20 sm:p-12">
@@ -143,28 +138,26 @@ function About() {
   return (
     <section
       id="about"
-      className="relative mx-auto max-w-3xl px-6 py-32 sm:py-40"
+      className="relative mx-auto max-w-3xl px-6 py-16 sm:py-20"
     >
       <p className="mb-2 text-xs uppercase tracking-[0.3em] text-purple-400">
         About
       </p>
-      <h2 className="mb-10 text-3xl font-semibold tracking-tight sm:text-4xl">
+      <h2 className="mb-6 text-3xl font-semibold tracking-tight sm:text-4xl">
         Background.
       </h2>
 
-      <div className="space-y-6 text-lg leading-relaxed text-zinc-300">
+      <div className="space-y-5 text-lg leading-relaxed text-zinc-300">
         <p>
           My name is Diana Zhang. I come from a cryptocurrency and professional
           esports background, and currently studying Finance at Georgia State
           University.
         </p>
-        <p>
-          I have personal interests in technology — if only I wasn&apos;t bad at
-          math I would be more involved.
-        </p>
         <p className="text-zinc-400">
-          Right now I&apos;m focused on the intersection of markets and code:
-          building, breaking, and iterating on tools that help me trade better.
+          I have personal interests in technology — if only I wasn&apos;t bad at
+          math I would be more involved. Right now I&apos;m focused on the
+          intersection of markets and code: building tools that help me trade
+          better.
         </p>
       </div>
     </section>
@@ -193,12 +186,12 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="relative mx-auto max-w-3xl px-6 py-32 text-center sm:py-40"
+      className="relative mx-auto max-w-3xl px-6 py-16 text-center sm:py-20"
     >
       <p className="mb-2 text-xs uppercase tracking-[0.3em] text-purple-400">
         Contact
       </p>
-      <h2 className="mb-10 text-3xl font-semibold tracking-tight sm:text-4xl">
+      <h2 className="mb-8 text-3xl font-semibold tracking-tight sm:text-4xl">
         Say hi.
       </h2>
 
